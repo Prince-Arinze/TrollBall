@@ -105,8 +105,10 @@ img {
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
     width: calc(100%- 3rem);
-    margin-left: var(--mb-3);
-    margin-right: var(--mb-3);
+    /* margin-left: var(--mb-3);
+    margin-right: var(--mb-3); */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .l-header {
