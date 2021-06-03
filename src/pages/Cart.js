@@ -56,7 +56,7 @@ const Cart= () => {
                                     cartItems.length !== 0 &&  
                                     <>
                                         <hr />
-                                        <div><button className="button cart-checkout">Checkout</button></div>
+                                        <div><button className="button cart-checkout" onClick={() => alert("Checked out")}>Checkout</button></div>
                                     </>
                                 } 
                            </div>

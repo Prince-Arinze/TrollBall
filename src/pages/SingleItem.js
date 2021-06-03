@@ -74,7 +74,7 @@ const SingleData = () => {
                                     cartItems.length !== 0 &&  
                                     <>
                                         <hr />
-                                        <div><button className="button checkout">Checkout</button></div>
+                                        <div><button className="button checkout" onClick={() => alert("Checked out")}>Checkout</button></div>
                                     </>
                                 } 
                            </div>
