@@ -263,7 +263,7 @@ img {
     right: 1rem;
    
 }
-.shop__img img {
+.shop__img {
     max-height: 280px;
     height: 280px;
     width: 100%;
