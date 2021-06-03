@@ -1,7 +1,6 @@
 import { useContext } from 'react';
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { DataContext } from '../Context/GlobalState';
-import { products } from '../data/products';
 import { FaTrash, FaPlus, FaArrowLeft } from 'react-icons/fa'
 
 const Cart= () => {
