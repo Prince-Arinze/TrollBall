@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { DataProvider } from './Context/GlobalState';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Routing from './routes/Routes';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <DataProvider>
+          <Routing />
+      </DataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
