@@ -67,12 +67,14 @@ body::-webkit-scrollbar {
   }
    
   body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px var(--first-color-alt);
+    opacity: .3;
   }
    
   body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    background-color: var(--first-color);
+    outline: none;
+    border-radius: 30px;
   }
 
 h1,h2,p {
