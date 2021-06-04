@@ -5,12 +5,15 @@ const Search = () => {
     const inputEl = useRef("")
     const { searchTerm, getSearchTerm } = useContext(DataContext)
     return(
-        <section>
-            <div className="bd-grid">
-                    <form className="search__form">
-                        <input type="text" ref={inputEl} value={searchTerm} className="search__input" placeholder="Search Products" onChange={() => getSearchTerm(inputEl.current.value)}/>
-                        <FaSearch className="search-icon"/>
-                    </form>
+        <section className="search__section">
+            <div className="box">
+                <input type="checkbox" id="check"/>
+                <div className="search__box">
+                   <input type="text" ref={inputEl} value={searchTerm} placeholder="Search Products" onChange={() => getSearchTerm(inputEl.current.value)}/>
+                   <label htmlFor="check" className="icon">
+                     <FaSearch/>
+                   </label>
+                </div>
             </div>
         </section>
     )
