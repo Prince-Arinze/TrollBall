@@ -75,8 +75,12 @@ body::-webkit-scrollbar {
     background-color: var(--first-color);
     outline: none;
     border-radius: 30px;
+    transition: all .3s ease;
   }
-
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--first-color-alt);
+    cursor: pointer;
+  }
 h1,h2,p {
   margin: 0;
 }
