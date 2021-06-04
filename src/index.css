@@ -145,6 +145,10 @@ img {
     transition: all 450ms ease-in-out;
     z-index: 1500;
   }
+  .store__title {
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-semi-bold);
+  }
 
 } 
 
@@ -304,6 +308,9 @@ img {
 }
 #check {
     display: none;
+}
+label.icon:hover {
+    cursor: pointer;
 }
 
 .shop__img {
@@ -560,13 +567,26 @@ img {
 /* SHOP */
 
 
-.shop__container {
-  display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(280px, 1fr));
-  grid-gap: 2rem;
-}
 .cart__container {
   height: calc(100% - var(--header-height));
+  margin-top: 5rem;
+}
+.shop__container {
+    width: 95%;
+    height: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+.back-button {
+    width: 95%;
+    display: flex;
+    margin: 2rem auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 .shop__data {
   position: relative;
@@ -576,13 +596,12 @@ img {
     text-align: center;
     margin-top: 1.5rem;
 }
-.shop_img {
+.cart_img {
     height: 300px;
-    width: 100%;
 }
-.shop__section {
+/* .shop__section {
    margin: 4rem 0;
-}
+} */
 .cart__description {
     line-height: 2;
     padding: 0 2rem ;
@@ -621,8 +640,10 @@ img {
 
   .red {
       background-color: rgb(160, 7, 7);
-      margin-left: .5rem;
   }
+  .red:hover {
+      background-color: var(--dark-color);
+   } 
 
   .prices {
       font-weight: var(--font-semi-bold);
@@ -641,13 +662,18 @@ img {
   background-color: var(--first-color-alt);
 }
 
+.grid__items {
+     width: 100%;
+}
+
 .add-btn {
     text-transform: uppercase;
 }
 
 .back-arrow {
-    margin-bottom: -5rem;
-    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100px;
     background-color: var(--gray-color);
     font-weight: var(--normal-font-size);
@@ -668,7 +694,10 @@ img {
    .section-all {
        margin-bottom: var(--mb-4);
    }
- 
+   .store__title {
+       font-size: var(--h2-font-size);
+       font-weight: var(--font-bold);
+   }
    .nav {
        height: calc(var(--header-height) + 1rem);
        justify-content: initial;

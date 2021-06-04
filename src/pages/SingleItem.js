@@ -15,18 +15,16 @@ const SingleData = () => {
      
     return (
         <main>
-        <section>
-            <div className="cart__container bd-grid shop__section">
-                  
-                    <div>
-                    <Link to="/shop" className="button back-arrow"><FaArrowLeft className="back-btn"/> Back</Link>
-                        <h2 className="home__title store__title">YOUR CART</h2>
-                    </div>
+             <section className="cart__container shop__section">               
+                <div className="back-button">
+                    <Link to="/shop" className="button back-arrow"><FaArrowLeft className="back-btn"/> <span>Back</span></Link>
+                        <h2 className="store__title">YOUR CART</h2>
+                </div>
                         <div className="shop__container">
                             <div>
-                               <img src={singleProduct.image} alt={singleProduct.name} className="shop_img"/>
+                               <img src={singleProduct.image} alt={singleProduct.name} className="cart_img grid__items"/>
                            </div>
-                           <div className="cart__description">
+                           <div className="cart__description grid__items">
                                 <h3>Product Description</h3>
                                
                                 <p>Name: {singleProduct.name}</p>
@@ -35,7 +33,7 @@ const SingleData = () => {
                                 <p>Instock: {singleProduct.stock}</p>
                                 <button className="button add-btn" onClick={() => addToCart(singleProduct)}>Add to Cart</button>
                            </div>
-                           <div className="cart__items">
+                           <div className="cart__items grid__items">
                                 <h3>Cart Items</h3>
                                 <hr />
                                 { cartItems.length === 0 && <div>Cart is empty.</div>}
@@ -57,11 +55,11 @@ const SingleData = () => {
                                            <hr />
                                            <div className="row-flex">
                                                <div>Items Price</div>
-                                               <div>&#8358;{itemPrice.toFixed(2)}</div>
+                                               <div><strong>&#8358;{itemPrice.toFixed(2)}</strong></div>
                                            </div>
                                            <div className="row-flex">
                                                <div>Tax Price</div>
-                                               <div>&#8358;{taxPrice.toFixed(2)}</div>
+                                               <div><strong>&#8358;{taxPrice.toFixed(2)}</strong></div>
                                            </div>
                                            <div className="row-flex">
                                                <div><strong>Total Price</strong></div>
@@ -79,7 +77,6 @@ const SingleData = () => {
                                 } 
                            </div>
                         </div>
-             </div>
         </section>
     </main>
     )
