@@ -16,10 +16,10 @@ const SingleData = () => {
     return (
         <main>
              <section className="cart__container shop__section">               
-                <div className="back-button">
-                    <Link to="/shop" className="button back-arrow"><FaArrowLeft className="back-btn"/> <span>Back</span></Link>
-                        <h2 className="store__title">YOUR CART</h2>
-                </div>
+                        <div className="back-button">
+                            <Link to="/shop" className="button back-arrow"><FaArrowLeft className="back-btn"/> <span>Back</span></Link>
+                                <h2 className="store__title">YOUR CART</h2>
+                        </div>
                         <div className="shop__container">
                             <div>
                                <img src={singleProduct.image} alt={singleProduct.name} className="cart_img grid__items"/>

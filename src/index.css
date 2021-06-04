@@ -150,6 +150,7 @@ img {
       font-weight: var(--font-semi-bold);
   }
 
+
 } 
 
 
@@ -571,6 +572,11 @@ label.icon:hover {
   height: calc(100% - var(--header-height));
   margin-top: 5rem;
 }
+.cart__content {
+    width: 95%;
+    height: 100%;
+    margin: 2rem auto;
+}
 .shop__container {
     width: 95%;
     height: 100%;
@@ -654,12 +660,19 @@ label.icon:hover {
     padding: 1rem 1rem;
     background-color: var(--first-color-alt);
 }
+.checkout:hover {
+    background-color: var(--first-color);
+}
 
 .cart-checkout {
-  width: 20%;
+  width: 50%;
   text-transform: uppercase;
   padding: 1rem 1rem;
   background-color: var(--first-color-alt);
+}
+
+.cart-checkout:hover {
+    background-color: var(--first-color);
 }
 
 .grid__items {
@@ -694,6 +707,9 @@ label.icon:hover {
    .section-all {
        margin-bottom: var(--mb-4);
    }
+   .cart-checkout {
+       width: 30%;
+    }
    .store__title {
        font-size: var(--h2-font-size);
        font-weight: var(--font-bold);

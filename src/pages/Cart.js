@@ -9,13 +9,13 @@ const Cart= () => {
     return (
         <main>
         <section>
-            <div className="cart__container bd-grid shop__section">
+            <div className="cart__container  shop__section">
                   
-                    <div>
-                    <Link to="/shop" className="button back-arrow"><FaArrowLeft className="back-btn"/> Back</Link>
-                        <h2 className="home__title store__title">YOUR CART</h2>
+                   <div className="back-button">
+                        <Link to="/shop" className="button back-arrow"><FaArrowLeft className="back-btn"/> <span>Back</span></Link>
+                        <h2 className="store__title">YOUR CART</h2>
                     </div>
-                        <div className="shop__container">
+                        <div className="cart__content">
                            <div className="cart__items">
                                 <h3>Cart Items</h3>
                                 <hr />
